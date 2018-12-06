@@ -10,7 +10,7 @@ const bigquery = new BigQuery({
 })
 
 const sqlQuery = `
-SELECT repo_name FROM \`bigquery-public-data.github_repos.files\` WHERE id IN
+SELECT DISTINCT repo_name FROM \`bigquery-public-data.github_repos.files\` WHERE id IN
 (
   SELECT id FROM \`bigquery-public-data.github_repos.contents\`
   WHERE id IN
