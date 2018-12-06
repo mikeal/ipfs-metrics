@@ -1,0 +1,19 @@
+{
+  "name": "ipfs-metrics",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google-cloud/bigquery": "^2.0.2",
+    "bent": "^1.1.0",
+    "parse-link-header": "^1.0.1",
+    "sleep-promise": "^8.0.1",
+    "yargs": "^12.0.5"
+  }
+}
