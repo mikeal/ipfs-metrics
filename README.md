@@ -17,3 +17,8 @@ repositories over time regardless of changes or moves/renames that might
 occur. This means that our historical data gets a little less accurate the
 farther back in time we go.
 
+The script [get-repos-from-bigquery.js](./get-repos-from-bigquery.js) queries
+the data in all of GitHub using BigQuery in order to identify repositories.
+The script will load the existing known repositories, add the new entries,
+and save the state back by writing a `dag-cbor` object to Cloud Storage and
+updating the repos.cid file in this repository.
