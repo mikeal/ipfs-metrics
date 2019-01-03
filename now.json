@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "functions/*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/filter",
+      "dest": "/functions/filter.js"
+    },
+    { "src": "/map-reduce-file",
+      "dest": "/functions/map-reduce-file.js"
+    },
+    { "src": "/map-reduce-range",
+      "dest": "/functions/map-reduce-range.js"
+    }
+  ],
+  "env": {
+    "X_AWS_SECRET_ACCESS_KEY": "@ipfs_metrics_aws_secret_access_key",
+    "X_AWS_ACCESS_KEY_ID": "@ipfs_metrics_aws_access_key_id"
+  }
+}

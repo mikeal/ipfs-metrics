@@ -47,7 +47,9 @@ const orgs = [
   'ipld',
   'ipfs-shipyard',
   'protocol',
-  'protoschool'
+  'protoschool',
+  'peer-base',
+  'orbitdb'
 ]
 
 const bget = async path => {
